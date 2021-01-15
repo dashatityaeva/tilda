@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Rubik Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Rubik-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Rubik-Medium.woff') format('woff');
+}
+
+$bg-aside: #C9C2C0;
+$bg-primary: #FFFFFF;
+$bg-secondary: #EEEEEE;
+$main-color-text: #000000;
+$secondary-color-text: #FFFFF6;
+$main-color-button: #FA8669;
+$bg-footer: #FA8669;
+
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik Regular', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 1.2;
+  color: $main-color-text;
+ 
+}
+a{
+  color: $main-color-text;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.btn {
+  background: $main-color-button;
+  font-family: 'Rubik Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: $secondary-color-text;
+  cursor: pointer;
+}
+.bg-primary {
+  background-color: $bg-primary;
+}
+.bg-secondary {
+  background-color: $bg-secondary;
+}
+.bg-footer {
+  background-color: $bg-footer;
+}
+// media
+$tablet-width: 768px;
+$desktop-width: 1920px;
+$mobile-only-width: 375px;

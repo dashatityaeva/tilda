@@ -1,0 +1,56 @@
+.how-we-work {
+    padding-top: 170px;
+    padding-bottom: 179px;
+}
+.how-we-work__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    padding-bottom: 72px;
+}
+
+.how-we-work__stages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto ;
+    max-width: 1170px;
+    @media (max-width: $tablet-width ) {
+      padding-left: 20px;  
+    }
+    
+   
+}
+.how-we-work__stage {
+    width: 50%;
+    margin-bottom: 27px;
+    @media (max-width: $mobile-only-width ) {
+        width: 100%;  
+    }
+}
+.stage__img {
+    width: 113px;
+    height: 119px;
+    @media (max-width: $mobile-only-width ) {
+        width: 90px;
+        height: 95px; 
+    }
+
+}
+.stage__description {
+    
+    width: 385px;
+    margin: 0;
+    margin-left: 156px;
+    margin-top: -50px;
+    @media (max-width: $tablet-width ) {
+        margin-top: -30px;
+        margin-left: 56px;
+        width: 250px;       
+    }
+    @media (max-width: $mobile-only-width ) {
+        margin-left: 111px;
+        width: 234px;
+    }
+}

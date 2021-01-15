@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="fonts/Rubik-Medium.woff" as="font">
+    <link rel="preload" href="fonts/Rubik-Regular.woff" as="font">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <button class="header__navigation-toggle" type="button"></button>
+            <aside class="aside aside--shadow">
+                <nav class="aside__navigation nav">
+                    <ul class="nav__item">
+                        <li class="nav__item-list">
+                            <a href="#about-us" class="nav__item-link nav__item-link--about-us">о нас</a>
+                        </li>
+                        <li class="nav__item-list">
+                            <a href="#advantages" class="nav__item-link nav__item-link--advantages">преимущества</a>
+                        </li>
+                        <li class="nav__item-list">
+                            <a href="#development" class="nav__item-link nav__item-link--development">разработка</a>
+                        </li>
+                        <li class="nav__item-list">
+                            <a href="#our-works" class="nav__item-link nav__item-link--our-works">наши работы</a>
+                        </li>
+                        <li class="nav__item-list">
+                            <a href="#how-we-work" class="nav__item-link nav__item-link--how-we-work">как мы работаем</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="aside__contacts">
+                    <h3 class="aside__contacts-title">контакты:</h3>
+                    <div class="aside__contacts-phone"><a href="tel:89213022222">8 921 302 22 22</a></div>
+                    <address class="aside__contacts-address">Санкт - Петербург ул. Ленина 5 </address>
+                </div>
+            </aside>
+            <div class="header__main">
+                <div class="header__logo"><a href="#" class="header__logo">Logo</a></div>
+                <h1 class="header__main-title">Создание сайтов на Tilda</h1>
+                <p class="header__main-description">мы разрабатываем корпоротивные сайты интернет- магазины и лендинги
+                </p>
+                <a class="btn header__main-btn" role="button" href="#">подробнее</a>
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <section id="about-us" class="about-us bg-primary">
+                <picture>
+                    <source media="(min-width: 1920px)" type="image/webp"
+                        srcset="images/about-us@1x.webp, images/about-us@2x.webp 2x">
+                    <source media="(min-width: 1920px)" srcset="images/about-us@1x.png, images/about-us@2x.png 2x">
+                    <source type="image/webp" srcset="images/about-us-mb@1x.webp, images/about-us-mb@2x.webp 2x">
+                    <img class="about-us__img" src="images/about-us-mb@1x.png" srcset="images/about-us-mb@2x.png 2x"
+                        alt="О нас">
+                </picture>
+                <div class="about-us__description">
+                    <p>Наша студия - это опытная команда проффесионалов которые знают, как разработать быстрый, удобный,
+                        стильный сайт компании, создать ресурс, решающий ваши коммерческие задачи и сделать это
+                        оперативно.
+                    </p>
+                    <p>
+                        Мы занимаемся не только разработкой, но и оказываем оперативную и качественную техническую
+                        поддержку проектов, чтобы они приносили вам реальный доход и реализовывали поставленные перед
+                        ними цели.
+                    </p>
+                    <button class="btn about-us__btn brief">заполнить бриф</button>
+                </div>
+            </section>
+            <section id="advantages" class="advantages bg-primary">
+                <h2 class="advantages__title">Преимущества Tilda </h2>
+                <div class="advantages__group">
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img class="advantage__img" src="images/design.svg" alt="Дизайн">
+                        </div>
+                        <h3 class="advantage__title">Дизайн</h3>
+                        <p class="advantage__description">
+                            Широкие возможности оформления. Платформа дает доступ к тысячам шаблонов под самые разные
+                            типы целей, а поддержка разнообразных плагинов позволяет получить желаемый дизайн.
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img class="advantage__img" src="images/functionality.svg" alt="Функциональность">
+                        </div>
+                        <h3 class="advantage__title">Функциональность</h3>
+                        <p class="advantage__description">
+                            В нашем агентстве, сделать проект на заказ – отличное решение для любого типа бизнеса. Блог,
+                            одностраничник, интернет-магазин или портал для крупной компании – эта CMS подойдет для
+                            реализации любой цели.
+                        </p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon">
+                            <img class="advantage__img" src="images/price.svg" alt="Цена">
+                        </div>
+                        <h3 class="advantage__title">Цена</h3>
+                        <p class="advantage__description">
+                            Стоимость работ по разработке ресурса в нашей компании значительно ниже, чем у конкурентов,
+                            так как мы экономим время, адаптируя готовый шаблон под потребности заказчика.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="development" class="cost bg-secondary">
+                <h2 class="cost__title">Стоимость</h2>
+                <div class="cards">
+                    <div class="card bg-landing">
+                        <h3 class="card__title">Landing page</h3>
+                        <span class="card__price">20 000  рублей</span>
+                        <ul class="card__description description">
+                            <li class="description__item">Персональный хостинг</li>
+                            <li class="description__item">Домен в подарок</li>
+                            <li class="description__item">Краткое руководство</li>
+                            <li class="description__item">Техническая консультация</li>
+                            <li class="description__item">Адаптивный дизайн</li>
+                            <li class="description__item">Контентая поддержка</li>
+                        </ul>
+                        <button class="btn card__btn order">заказать</button>
+                    </div>
+                    <div class="card bg-corporate">
+                        <h3 class="card__title">Корпоративный</h3>
+                        <span class="card__price">35 000  рублей</span>
+                        <ul class="card__description description">
+                            <li class="description__item">Персональный хостинг</li>
+                            <li class="description__item">Домен в подарок</li>
+                            <li class="description__item">Краткое руководство</li>
+                            <li class="description__item">Техническая консультация</li>
+                            <li class="description__item">Адаптивный дизайн</li>
+                            <li class="description__item">Контентая поддержка</li>
+                        </ul>
+                        <button class="btn card__btn order">заказать</button>
+                    </div>
+                    <div class="card bg-internet-shop">
+                        <h3 class="card__title">Интернет - магазин</h3>
+                        <span class="card__price">75 000  рублей</span>
+                        <ul class="card__description description">
+                            <li class="description__item">Персональный хостинг</li>
+                            <li class="description__item">Домен в подарок</li>
+                            <li class="description__item">Краткое руководство</li>
+                            <li class="description__item">Техническая консультация</li>
+                            <li class="description__item">Адаптивный дизайн</li>
+                            <li class="description__item">Контентая поддержка</li>
+                        </ul>
+                        <button class="btn card__btn order">заказать</button>
+                    </div>
+                </div>
+            </section>
+            <section id="our-works" class="our-works">
+                <h2 class="our-works__title">Наши работы</h2>
+                <div class="our-works__examples">
+                    <div class="our-works__example bg-1"></div>
+                    <div class="our-works__example bg-2"></div>
+                    <div class="our-works__example bg-3"></div>
+                    <div class="our-works__example bg-4"></div>
+                    <div class="our-works__example bg-5"></div>
+                    <div class="our-works__example bg-6"></div>
+                    <div class="our-works__example bg-7"></div>
+                    <div class="our-works__example bg-8"></div>
+                </div>
+            </section>
+            <section id="how-we-work" class="how-we-work">
+                <h2 class="how-we-work__title">Как мы работаем</h2>
+                <div class="how-we-work__stages">
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/01.svg" alt="1 этап">
+                        <p class="stage__description">Подбор и покупка шаблона под конкретные задачи клиента</p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/02.svg" alt="2 этап">
+                        <p class="stage__description">Выбор и заведение хостинга и домена на имя заказчика</p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/03.svg" alt="3 этап">
+                        <p class="stage__description">Установка и развертка шаблона WP</p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/04.svg" alt="4 этап">
+                        <p class="stage__description">Технические доработки по ТЗ клиента  </p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/05.svg" alt="5 этап">
+                        <p class="stage__description">Частичная настройка SEO функционала – хлебные крошки, возможность прописывания метатегов, ЧПУ
+                        </p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/06.svg" alt="6 этап">
+                        <p class="stage__description">Заполнение по одной типовой страницы контентом, предоставленного клиентом</p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/07.svg" alt="7 этап">
+                        <p class="stage__description">Русифицирование шаблона, а также очистку от ненужных функций и элементов</p>
+                    </div>
+                    <div class="how-we-work__stage stage">
+                        <img class="stage__img" src="images/08.svg" alt="8 этап">
+                        <p class="stage__description">Подготовка индивидуальной инструкции по работе с порталом</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer bg-footer">
+        <nav class="footer__navigation navigation">
+            <ul class="navigation__item">
+                <li class="navigation__item-list">
+                    <a href="#about-us" class="navigation__item-link">о нас</a>
+                </li>
+                <li class="navigation__item-list">
+                    <a href="#advantages" class="navigation__item-link">преимущества</a>
+                </li>
+                <li class="navigation__item-list">
+                    <a href="#development" class="navigation__item-link">разработка</a>
+                </li>
+                <li class="navigation__item-list">
+                    <a href="#our-works" class="navigation__item-link">наши работы</a>
+                </li>
+                <li class="navigation__item-list">
+                    <a href="#how-we-work" class="navigation__item-link">как мы работаем</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__socials socials">
+            <div class="socials__item">
+                <a class="socials__link" href="#" target="_blank">
+                    <img class="socials__img" src="images/inst.svg" alt="Инстаграм">
+                </a>
+            </div>
+            <div class="socials__item">
+                <a class="socials__link" href="#" target="_blank">
+                    <img class="socials__img" src="images/vk.svg" alt="Вконтакте">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.header__wrapper{
+    display: flex;
+    background-color: $bg-primary
+}
+.about-us {
+    display: flex;
+    justify-content: center;
+    padding: 170px 0;
+    @media (max-width: $tablet-width) {
+        display: none;
+        flex-wrap: wrap;
+        height: 100%;
+      }
+}
+.about-us__img {
+    width: 658px;
+    height: 452px;
+}
+.about-us__description {
+    padding-top: 9px;
+    width: 626px;
+}
+
+.about-us__btn {
+    display: block;
+    border: none;
+    padding: 21px 53px;
+}
